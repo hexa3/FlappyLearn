@@ -9,9 +9,7 @@
 
 FlappyLearn is a complete autonomous learning system for Flappy Bird. It evolves compact recurrent neural circuits, visualizes training progress, benchmarks learned agents against baselines, and exports browser-playable replays with no heavyweight game engine.
 
-**Banner recommendation:** place a 1280 x 640 social banner at `docs/assets/flappylearn-social-card.png` showing a learning curve behind a Flappy Bird replay frame. Put the logo in the top-left, the one-line value proposition centered, and a small "Neuroevolution playground" label in the bottom-right.
-
-**Animated demo recommendation:** add a 12-second GIF at `docs/assets/demo.gif` that cycles through training metrics, the best replay, and a small network diagram. Use it directly below this opening section.
+<!-- TODO: add docs/assets/demo.gif below — 12-second cycle of training metrics, best replay, and network diagram. -->
 
 ## Why FlappyLearn
 
