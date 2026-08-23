@@ -2,14 +2,13 @@
 
 > Watch an AI discover Flappy Bird from scratch with neuroevolution, live metrics, replay exports, and beginner-friendly learning material.
 
-[![CI](https://github.com/ibnshafi/FlappyLearn/actions/workflows/ci.yml/badge.svg)](https://github.com/ibnshafi/FlappyLearn/actions/workflows/ci.yml)
+[![CI](https://github.com/hexa3/FlappyLearn/actions/workflows/ci.yml/badge.svg)](https://github.com/hexa3/FlappyLearn/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
-[![Project status](https://img.shields.io/badge/status-public%20launch%20ready-16a34a.svg)](LAUNCH_AUDIT.md)
 
 FlappyLearn is a complete autonomous learning system for Flappy Bird. It evolves compact recurrent neural circuits, visualizes training progress, benchmarks learned agents against baselines, and exports browser-playable replays with no heavyweight game engine.
 
-<!-- TODO: add docs/assets/demo.gif below — 12-second cycle of training metrics, best replay, and network diagram. -->
+<!-- TODO: add a demo GIF at docs/assets/demo.gif — 12-second cycle of training metrics, best replay, and network diagram. -->
 
 ## Why FlappyLearn
 
@@ -18,7 +17,7 @@ FlappyLearn is a complete autonomous learning system for Flappy Bird. It evolves
 - **Deterministic simulator:** seeded Flappy Bird physics makes experiments reproducible and easy to benchmark.
 - **No hidden cheating:** the agent observes the current game state only, not future pipes or collision answers.
 - **Dependency-light:** the core package uses Python and NumPy; visualizations are plain HTML/SVG.
-- **Contributor-friendly:** tests, configs, CI, governance, release docs, issue templates, and educational docs are included.
+- **Contributor-friendly:** tests, configs, CI, contribution guide, and educational docs are included.
 
 ## Demo
 
@@ -38,23 +37,17 @@ Useful local artifacts after a run:
 - `runs/smoke/latest/best.json`: serialized best genome and metadata.
 - `runs/smoke/latest/checkpoints/`: population snapshots for resume and inspection.
 
-## Screenshots And GIFs
-
-Add these assets before a public announcement:
-
-| Asset | Path | Purpose |
-| --- | --- | --- |
-| Hero GIF | `docs/assets/demo.gif` | First visual proof that the AI learns. |
-| Replay screenshot | `docs/assets/replay.png` | Shows the game state and learned behavior. |
-| Metrics screenshot | `docs/assets/metrics.png` | Shows generation-over-generation progress. |
-| Social card | `docs/assets/flappylearn-social-card.png` | GitHub social preview and launch posts. |
-| Logo | `docs/assets/logo.png` | Repository identity and docs header. |
+<!-- TODO: capture these assets before a public announcement:
+     - docs/assets/demo.gif        hero GIF: training metrics, best replay, network diagram
+     - docs/assets/replay.png      replay screenshot: game state + learned behavior
+     - docs/assets/metrics.png     metrics screenshot: generation-over-generation progress
+-->
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/ibnshafi/FlappyLearn.git
-cd flappylearn
+git clone https://github.com/hexa3/FlappyLearn.git
+cd FlappyLearn
 python -m pip install -e ".[dev]"
 pytest
 python -m flappylearn train --config configs/smoke.json
@@ -226,7 +219,6 @@ The documentation is designed for MkDocs Material because it is simple, fast, Py
 - [Genetic algorithms](docs/concepts/genetic-algorithms.md)
 - [Configuration reference](docs/reference/configuration.md)
 - [Visualization guide](docs/reference/visualizations.md)
-- [Launch audit](LAUNCH_AUDIT.md)
 
 ## Contributing
 
