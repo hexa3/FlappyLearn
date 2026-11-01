@@ -259,3 +259,7 @@ FlappyLearn is released under the [MIT License](LICENSE). MIT is the best fit fo
 ## Credits
 
 FlappyLearn is built by its contributors for people who want machine learning systems that are understandable, hackable, and fun to watch.
+
+---
+
+<p align="center">Built by <a href="https://sheheryar.xyz">Sheheryar</a> · <a href="https://github.com/hexa3">github.com/hexa3</a></p>
